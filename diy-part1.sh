@@ -15,8 +15,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
 #sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 
-#关机（增加关机功能）
-svn co https://github.com/Ljzkirito/openwrt-packages/trunk/luci-app-poweroff package/lean/luci-app-poweroff
 # 获取luci-app-passwall以及缺失的依赖
 pushd package/lean
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
