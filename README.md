@@ -49,6 +49,7 @@ make defconfig
 - [qughij/openwrt-xiaoyu_xy-c5](https://github.com/qughij/openwrt-xiaoyu_xy-c5)
 - [SuLingGG/OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
 - [IvanSolis1989/OpenWrt-DIY](https://github.com/IvanSolis1989/OpenWrt-DIY)
+- [garypang13/OpenWrt](https://github.com/garypang13/OpenWrt)
 - [zlxj2000/Openwrt-firmware](https://github.com/zlxj2000/Openwrt-firmware)
 - [SuLingGG/Action-OpenWrt-Plus](https://github.com/SuLingGG/Action-OpenWrt-Plus)
 - [Lancenas/Actions-Lean-OpenWrt](https://github.com/Lancenas/Actions-Lean-OpenWrt)
