@@ -11,9 +11,9 @@
 #
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
-#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
 # 获取luci-app-passwall以及缺失的依赖
 pushd package/lean
@@ -30,7 +30,6 @@ svn co https://github.com/Ljzkirito/openwrt-packages/trunk/ppp package/network/s
 # Remove upx commands
 sed -i "/upx/d" package/lean/UnblockNeteaseMusicGo/Makefile || true
 sed -i "/upx/d" package/lean/frp/Makefile || true
-sed -i "/upx/d" package/lean/v2ray-plugin/Makefile || true
 # Add luci-theme-argon
 rm -rf package/lean/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
