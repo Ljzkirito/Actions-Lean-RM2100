@@ -13,7 +13,9 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 获取luci-app-passwall以及缺失的依赖
 pushd package/lean
